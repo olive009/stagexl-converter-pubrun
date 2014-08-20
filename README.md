@@ -9,7 +9,7 @@ While working with the DisplayList in StageXL is rather similar to
 what you know from Actionscript, everything else is so different
 that after half a class, you will either give up, or start from scratch.
 
-### Or.
+### Or. 
 
 You try this little tool, taking 90% of the pain out of the process.
 
