@@ -1,18 +1,17 @@
-name: as3_to_dart
-description: Pure Actionscript to Dart Conversion Helper.
+name: actionscript-to-dart-project
 version: 0.1.0
-homepage: https://github.com/blockforest/actionscript-to-dart
-authors: 
-- Nils Döhring <nilsdoehring@gmail.com>
+author: Nils Döhring <nilsdoehring@gmail.com>
+description: Pure Actionscript to Dart Conversion Helper. Dart Project Edition.
+homepage: https://github.com/blockforest/actionscript-to-dart-project
 environment:
-  sdk: ">=1.6.0-dev"
+  sdk: '>=1.6.0-dev'
 dependencies:
   args: any
   browser: any
-  path: any
-  stagexl: 
-   git : https://github.com/bp74/StageXL.git
   dotlight_working:
     path: lib/dotlight_working
+  path: any
+  stagexl:
+    git: https://github.com/bp74/StageXL.git
   xmas_working:
     path: lib/xmas_working
