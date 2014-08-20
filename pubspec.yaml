@@ -1,4 +1,4 @@
-name: actionscript-to-dart-project
+name: as3_to_dart
 version: 0.1.0
 author: Nils Döhring <nilsdoehring@gmail.com>
 description: Pure Actionscript to Dart Conversion Helper. Dart Project Edition.
