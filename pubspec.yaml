@@ -1,7 +1,7 @@
 name: as3_to_dart
 description: Pure Actionscript to Dart Conversion Helper.
 version: 0.1.0
-homepage: https://github.com/sethladd/simple_http_server
+homepage: https://github.com/blockforest/actionscript-to-dart
 authors: 
 - Nils Döhring <nilsdoehring@gmail.com>
 environment:
