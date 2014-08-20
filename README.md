@@ -74,8 +74,10 @@ But hey, at least now you can focus on the important stuff!
 
 ## Usage
 
-Try it out by running bin/as3_to_dart.dart as command line script without parameters. 
+Try it out by running bin/as3_to_dart.dart as command line script without parameters.
+The pub run docs tell you how to do that: https://www.dartlang.org/tools/pub/cmd/pub-run.html
 This will generate the 'examples_autogen' folder under lib.
+Of course you want to convert your own stuff, so do a 'pub run as3_to_dart --help'
 
 #### Example #1: Spring Actionscript
 To get an idea of how much the converter can help you, look at the basic
