@@ -1,4 +1,3 @@
-library as3_to_dart;
 import 'package:stagexl/stagexl.dart';
 import 'package:as3_to_dart/xmas_working/xmas.dart';
 import 'dart:html';
