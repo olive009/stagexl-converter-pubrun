@@ -11,6 +11,11 @@ that after converting half a class, you will either give up, or start from scrat
 ### Or: 
 
 You try this little tool, taking 90% of the pain out of the process.
+#### By the way: 
+you are looking at the Dart Project Edition of the converter.
+If you consider yourself an elite Dartisan, I'd recommend using the pub global edition:
+- pub package: SOON
+- sources: https://github.com/blockforest/actionscript-to-dart-pubglobal
 
 ## What it does for you
 
