@@ -1,8 +1,8 @@
-package example.wonderfl.dotlight {
+package wonderfl.dotlight {
 	import flash.display.BitmapData;
 	import flash.geom.Rectangle;
 	/**
-	 * @author nilsdoehring
+	 * @author http://wonderfl.net/c/3lDU // some tweaks by nilsdoehring
 	 */
 	public class EmitLight {
     private var canvas:BitmapData;

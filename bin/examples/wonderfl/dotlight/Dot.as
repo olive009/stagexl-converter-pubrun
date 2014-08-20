@@ -1,6 +1,6 @@
-package example.wonderfl.dotlight {
+package wonderfl.dotlight {
 	/**
-	 * @author nilsdoehring
+	 * @author http://wonderfl.net/c/3lDU // some tweaks by nilsdoehring
 	 */
 	public class Dot {
 

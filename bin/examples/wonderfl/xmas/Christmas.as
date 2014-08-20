@@ -1,4 +1,4 @@
-package example.wonderfl.xmas {
+package wonderfl.xmas {
     import com.greensock.*;
     import com.greensock.easing.Bounce;
     import flash.display.Bitmap;

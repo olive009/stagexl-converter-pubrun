@@ -1,0 +1,7 @@
+name: dotlight_working
+version: 0.1.0
+description: dotlight fixed dart lib
+dependencies:
+  stagexl: 
+   git : https://github.com/bp74/StageXL.git
+  logging: any

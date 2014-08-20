@@ -1,6 +1,6 @@
-package example.wonderfl.dotlight {
+package wonderfl.dotlight {
 	/**
-	 * @author nilsdoehring
+	 * @author http://wonderfl.net/c/3lDU // some tweaks by nilsdoehring
 	 */
 	/**
 	 * 色相（Hue） 彩度(Saturation) 明度(Value・Brightness) で色を定義するクラスです.

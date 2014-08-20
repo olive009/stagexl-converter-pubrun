@@ -7,7 +7,7 @@ Original code port from http://mrl.nyu.edu/~perlin/noise/
 and some help from http://freespace.virgin.net/hugo.elias/models/m_perlin.htm
 AS3 optimizations by Mario Klingemann http://www.quasimondo.com
 */
-package example.wonderfl.dotlight {
+package wonderfl.dotlight {
 	import flash.display.BitmapData;
 	
 	final public class OptimizedPerlin {

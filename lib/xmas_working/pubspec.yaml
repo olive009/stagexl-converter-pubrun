@@ -1,0 +1,7 @@
+name: xmas_working
+version: 0.1.0
+description: xmas fixed dart lib
+dependencies:
+  stagexl: 
+   git : https://github.com/bp74/StageXL.git
+  logging: any

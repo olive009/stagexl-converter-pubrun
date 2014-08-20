@@ -1,4 +1,4 @@
-package example.wonderfl.dotlight {
+package wonderfl.dotlight {
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
 	import flash.display.BlendMode;
@@ -12,7 +12,7 @@ package example.wonderfl.dotlight {
 	import flash.geom.Rectangle;
 	import flash.utils.getTimer;
 	/**
-	 * @author nilsdoehring
+	 * @author http://wonderfl.net/c/3lDU // some tweaks by nilsdoehring
 	 */
 	public class DotLight extends Sprite {
     private var rect:Rectangle;

@@ -7,8 +7,12 @@ authors:
 environment:
   sdk: ">=1.6.0-dev"
 dependencies:
-  examples_autogen:
-    path: lib/examples_autogen
   args: any
   browser: any
   path: any
+  stagexl: 
+   git : https://github.com/bp74/StageXL.git
+  dotlight_working:
+    path: lib/dotlight_working
+  xmas_working:
+    path: lib/xmas_working

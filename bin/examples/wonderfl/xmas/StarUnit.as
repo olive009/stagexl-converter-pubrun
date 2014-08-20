@@ -1,4 +1,4 @@
-package example.wonderfl.xmas{
+package wonderfl.xmas{
 import flash.display.Shape;
 
 class StarUnit extends Shape {

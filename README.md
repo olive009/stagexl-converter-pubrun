@@ -1,5 +1,4 @@
-Pure Actionscript to Dart Conversion Helper
-===========================================
+## Pure Actionscript to Dart Conversion Helper
 
 ### Fellow Actionscript Developers,
 so you've heard about Dart and StageXL and want to give it a shot.
@@ -7,9 +6,9 @@ And you have a project or just some classes you want to port.
 
 While working with the DisplayList in StageXL is rather similar to
 what you know from Actionscript, everything else is so different
-that after half a class, you will either give up, or start from scratch.
+that after converting half a class, you will either give up, or start from scratch.
 
-### Or. 
+### Or: 
 
 You try this little tool, taking 90% of the pain out of the process.
 
@@ -49,7 +48,7 @@ You try this little tool, taking 90% of the pain out of the process.
 
 ### Misc
 - convert (most) Math functions
-- testing for null (in Dart, you can only do if(bool), all other need if(type != null)
+- testing for null (in Dart, you can only do if(bool), all other need if(type != null))
 - type casting: int(value) to (value).toInt()
 - type casting: (Class)value to (value as Class)
 - type casting: Class(value) to (value as Class)
@@ -60,7 +59,7 @@ You try this little tool, taking 90% of the pain out of the process.
 - order of BitmapData.draw and BitmapData.fillColor (pure magic!)
 
 
-### What it does not do for you.   
+## What it does not do for you.   
 Anything else. You'll have to manually deal with
 - differences between the API's of StageXL and Flash's DisplayList.
 - shortcomings of StageXL's DisplayList API's
@@ -70,30 +69,33 @@ But hey, at least now you can focus on the important stuff!
 
 ## Usage
 
-Try it out by running the 'convert_examples' task. 
-This will generate three libraries.
+Try it out by running bin/as3_to_dart.dart as command line script without parameters. 
+This will generate the 'examples_autogen' folder under lib.
 
-### Example #1: Spring Actionscript
+#### Example #1: Spring Actionscript
 To get an idea of how much the converter can help you, look at the basic
 architecture of Spring Actionscript that is provided in the example.
-From the 78 classes converted automatically, just one generates an error 
-(IObjectFactory, because in Actionscript, interfaces can extend several other interfaces, e.g.
+
+From the 28 classes converted automatically, just IObjectFactory generates an error, 
+because in Actionscript, interfaces can extend several other interfaces, e.g.
 interface IObjectFactory extends IObjectDefinitionRegistryAware, IEventDispatcher
 In Dart, this is not possible, so you'll have to change to implements, manually)
 
-### Example #2: DotLight ( taken from http://wonderfl.net/c/3lDU )
-Compare lib/dotlight_working with lib/dotlight_autogen to get an idea of the amount of
-manual tweaking required to get things running.
+#### Example #2: DotLight ( taken from http://wonderfl.net/c/3lDU )
+Compare the sources in lib/dotlight_working with those in lib/examples_autogen to get an 
+idea of the amount of manual tweaking required to get things running.
+
 Also, get an idea of differences in performance if you're not optimizing
 (b/c in this case, it's just stupid to draw to BitmapData before drawing to canvas.)
-TODO: remove myself as author from doc comments. that was automatically added.
+
   
-### Example #3: Christmas Tree ( taken from http://wonderfl.net/c/bSES )
-Again, compare lib/xmas_working with lib/xmas_autogen to get an idea of the amount of
+#### Example #3: Christmas Tree ( taken from http://wonderfl.net/c/bSES )
+Again, compare lib/xmas_working with lib/examples_autogen to get an idea of the amount of
 manual tweaking required to get things running.
-As this example makes use of the 3D capabilities of Actionscript Sprites, my hope is
-this encourages bp74 even more to add 3D to StageXL :-)
-TODO: remove myself as author from doc comments. that was automatically added.
+
+This example makes use of the 3D capabilities of Actionscript Sprites – StageXL does not
+have 3D, yet, so these parts have been commented in the working example.
+
 
 
 ## Common Pitfalls you will tap into

@@ -13,12 +13,12 @@ packages:
     description: collection
     source: hosted
     version: "0.9.4"
-  examples_autogen:
+  dotlight_working:
     description:
-      path: "lib/examples_autogen"
+      path: "lib/dotlight_working"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.1.0"
   logging:
     description: logging
     source: hosted
@@ -34,3 +34,9 @@ packages:
       url: "https://github.com/bp74/StageXL.git"
     source: git
     version: "0.9.4"
+  xmas_working:
+    description:
+      path: "lib/xmas_working"
+      relative: true
+    source: path
+    version: "0.1.0"
