@@ -3,11 +3,12 @@ import 'package:args/args.dart';
 import 'package:path/path.dart';
 
 const String DEFAULT_SOURCE_DIR = "C:/Users/santiago/Desktop/AsWing/src";
-const String DEFAULT_TARGET_DIR = "C:/Users/santiago/Desktop/AsWingDart";
+const String DEFAULT_TARGET_DIR = "C:/Users/santiago/Adobe Flash Builder 4.7/AsWingDart";
+const String DEFAULT_IS_MOVED = "false";
 
 String source_basedir;
 String target_basedir;
-bool is_moved = true;
+bool is_moved;
 
 void main(List args) {
   source_basedir = DEFAULT_SOURCE_DIR;
@@ -31,11 +32,15 @@ void recursiveFolderCopySync(String path1, String path2) {
   dir1.listSync().forEach((element) {
       String elementPath = element.path;
       String newPath = elementPath.replaceAll(source_basedir,target_basedir);
-      print("oldPath: "+elementPath);
-      print("newPath: "+newPath);
       if (element is File) {
         if(extension(element.path).toLowerCase() == ".dart"){
+          print("oldPath: "+elementPath);
+          print("newPath: "+newPath);
           File newFile = new File(newPath);
+          if(newFile.existsSync()){
+            newFile.deleteSync();
+            newFile = new File(newPath);
+          }
           newFile.writeAsBytesSync(element.readAsBytesSync());
           if(is_moved){
             element.delete();
@@ -59,7 +64,7 @@ void _setupArgs(List args) {
   argParser.addOption('source', abbr: 's', defaultsTo: DEFAULT_SOURCE_DIR, help: 'The path (relative or absolute) to the Actionscript source(s) to be converted.', valueHelp: 'source', callback: (_source_basedir) {
     source_basedir = _source_basedir;
   });
-  argParser.addOption('is_move', abbr: 'm', defaultsTo: "true", help: 'Should the generated dart files removed from source dir.', valueHelp: 'is_moved', callback: (_is_moved) {
+  argParser.addOption('is_move', abbr: 'm', defaultsTo: DEFAULT_IS_MOVED, help: 'Should the generated dart files removed from source dir.', valueHelp: 'is_moved', callback: (_is_moved) {
     is_moved = _is_moved == "true";
   });
 

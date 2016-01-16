@@ -7,8 +7,8 @@ const String TEMPLATE_LIBRARY_FILE = "library.dart.tpl";
 const String TEMPLATE_PUBSPEC_FILE = "pubspec.yaml.tpl";
 const String TEMPLATE_REPLACE_STRING = "@library@";
 
-final String DEFAULT_SOURCE_DIR = join(dirname(Platform.script.toFilePath()), "examples");
-const String DEFAULT_LIBRARY_NAME = "examples_autogen";
+final String DEFAULT_SOURCE_DIR = join(dirname(Platform.script.toFilePath()), "C:/Users/santiago/Desktop/AsWing/src");
+const String DEFAULT_LIBRARY_NAME = "as_wing";
 const String DEFAULT_TARGET_DIR = "lib";
 
 String library_file_content;
